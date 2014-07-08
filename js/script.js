@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
 	// scroll on click functionality
 	var $root = $('html, body');
@@ -34,4 +34,4 @@ $(document).ready(function(){
 	}
 
 //document.ready end
-});
+// });
