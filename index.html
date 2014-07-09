@@ -23,7 +23,7 @@
                     <a href="#myAnchor2" rel="" id="anchor1" class="anchorLink">About</a>
                   </li>
                   <li>
-                    <a href="#myAnchor" rel="" id="anchor2" class="anchorLink">Portfolio</a>
+                    <a href="#myAnchor" rel="" id="anchor2" class="anchorLink">Projects</a>
                   </li>
                   <li>
                     <a href="#myAnchor3" rel="" id="anchor3" class="anchorLink">Contact</a>
@@ -43,7 +43,7 @@
         
           <div class="row">
             <div class="span10 offset1">
-              <div class="animated rubberBand">
+              <div class="animated bounceInLeft">
                 <a><span itemprop="name">Tyler Buchanan</span></a>
               </div>
             </div>
@@ -52,21 +52,7 @@
             <div class="pt-page pt-page-current">
               <div class="row v-center">
                 <div class="span6 ani-processed">
-                  <div class="span6">
-                    <a href='https://chair-app.herokuapp.com/' target="_blank"><img src="img/chair_lg2.jpg" id="web" alt="Image"></a>
-                  </div>
-                </div>
-                <div class="span3 ani-processed">
-                    <h6>Chair</h6>
-                    A community app to donate furniture
-                    <br><a href='https://github.com/tbuchanan/chair_app' target="_blank"><i class='fa fa-github fa-3x'></i></a>                  
-                </div>
-              </div>
-            </div>
-            <div class="pt-page">
-              <div class="row v-center">
-                <div class="span6 ani-processed">
-                  <div class="span6">
+                 <div class="span6">
                     <a href='http://popups-app.herokuapp.com/' target="_blank"><img src="img/popspotz_lg2.jpg" id="web" alt="Image"></a>
                   </div>
                 </div>
@@ -75,6 +61,20 @@
                     A social app for locating Popup businesses
                     <br><a href='https://github.com/tbuchanan/Project-2' target="_blank"><i class='fa fa-github fa-3x'></i></a>
                 </div>
+              </div>
+            </div>
+            <div class="pt-page">
+              <div class="row v-center">
+                <div class="span6 ani-processed">
+                  <div class="span6">
+                    <a href='https://chair-app.herokuapp.com/' target="_blank"><img src="img/chair_lg2.jpg" id="web" alt="Image"></a>
+                  </div>
+                </div>
+                  <div class="span3 ani-processed">
+                    <h6>Chair</h6>
+                    A community app to donate furniture
+                    <br><a href='https://github.com/tbuchanan/chair_app' target="_blank"><i class='fa fa-github fa-3x'></i></a>
+                  </div>
               </div>
             </div>
             <div class="pt-page">
@@ -149,18 +149,15 @@
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="flat-ui/js/bootstrap.min.js"></script>
-<!-- <script src="js/modernizr.custom.js"></script>
-<script src="js/page-transitions.min.js"></script>
-<script src="js/startup-kit.min.js"></script> -->
 <script src="js/main.min.js"></script>
-<!-- <script src="js/script.min.js"></script> -->
+
 <script>
-  // scroll on click functionality
+  // scroll on click functionality & jQuery actions
   var $root = $('html, body');
   $('a').click(function() {
       $root.animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 450);
+      }, 260);
       return false;
   });
   
@@ -188,6 +185,8 @@
       }, 3000); 
   }
 </script>
+
+<!-- to defer loading of javascript, per Google -->
 <script type="text/javascript">
   function downloadJSAtOnload() {
     var element = document.createElement("script");
