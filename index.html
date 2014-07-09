@@ -149,9 +149,10 @@
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="flat-ui/js/bootstrap.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
+<!-- <script src="js/modernizr.custom.js"></script>
 <script src="js/page-transitions.min.js"></script>
-<script src="js/startup-kit.min.js"></script>
+<script src="js/startup-kit.min.js"></script> -->
+<script src="js/main.min.js"></script>
 <!-- <script src="js/script.min.js"></script> -->
 <script>
   // scroll on click functionality
@@ -186,6 +187,18 @@
           element.removeClass('animated ' + animation);
       }, 3000); 
   }
+</script>
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "main.min.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>
 
 </body>
