@@ -30,6 +30,11 @@ Copyright (c) 2014 Daniel Eden
 /* sizing for tablet */
 @media screen and (min-width: 516px) and (max-width: 800px) {
 
+	.navbar-inner-fluid a span {
+		position: relative;
+		font-size: 65%;
+	}
+
 	.animated.bounceInLeft span {
 		position: relative;
 		font-size: 75%;
@@ -40,6 +45,10 @@ Copyright (c) 2014 Daniel Eden
 /* sizing for mobile */
 @media screen and (min-width: 150px) and (max-width: 515px) {
 	
+	.header-17 {
+		display: none;
+	}
+
 	.animated.bounceInLeft span {
 		position: relative;
 		font-size: 60%;
