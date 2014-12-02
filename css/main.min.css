@@ -38,6 +38,8 @@ Copyright (c) 2014 Daniel Eden
 	.animated.bounceInLeft span {
 		position: relative;
 		font-size: 75%;
+		/*margin-top: ;
+		margin-bottom: ;*/
 	}
 	
 }
@@ -47,6 +49,10 @@ Copyright (c) 2014 Daniel Eden
 	
 	.header-17 {
 		display: none;
+	}
+
+	div .animated.bounceInLeft {
+		margin: -10% 0% -15% 0%;
 	}
 
 	.animated.bounceInLeft span {
