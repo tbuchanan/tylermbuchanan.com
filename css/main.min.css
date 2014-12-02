@@ -49,6 +49,10 @@ Copyright (c) 2014 Daniel Eden
 		display: none;
 	}
 
+	div .animated.bounceInLeft {
+		margin: -10% 0% -15% 0%;
+	}
+
 	.animated.bounceInLeft span {
 		position: relative;
 		font-size: 60%;
